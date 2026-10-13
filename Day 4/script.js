@@ -1,4 +1,3 @@
-```javascript
 console.log("DAY 4: LOGICAL OPERATORS");
 
 console.log("EXAMPLE 1: AND");
@@ -79,4 +78,3 @@ console.log("EXAMPLE 20: Final Practice");
 let finalAge = 21;
 let finalMarks = 85;
 console.log(finalAge >= 18 && finalMarks >= 50);
-```

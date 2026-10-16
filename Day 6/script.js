@@ -1,135 +1,113 @@
-console.log("DAY 6: STRING METHODS");
+console.log("Day 6");
 
-// Example 1: Length
-console.log("EXAMPLE 1: LENGTH");
-let name1 = "Ali";
-console.log(name1.length);
+let name = "Ali";
+console.log(name.length);
 
-let city1 = "Lahore";
-console.log(city1.length);
+let city = "Lahore";
+console.log(city.length);
 
-let word1 = "Apple";
-console.log(word1.length);
+let fruit = "Apple";
+console.log(fruit.length);
 
 
-// Example 2: charAt()
-console.log("EXAMPLE 2: CHARAT");
-let name2 = "Ahmed";
-console.log(name2.charAt(0));
+let a = "Ahmed";
+console.log(a.charAt(0));
 
-let word2 = "School";
-console.log(word2.charAt(2));
+let b = "School";
+console.log(b.charAt(2));
 
-let city2 = "Karachi";
-console.log(city2.charAt(3));
+let c = "Mango";
+console.log(c.charAt(3));
 
 
-// Example 3: Uppercase and Lowercase
-console.log("EXAMPLE 3: UPPERCASE AND LOWERCASE");
-let name3 = "ali";
-console.log(name3.toUpperCase());
+let d = "ali";
+console.log(d.toUpperCase());
 
-let city3 = "ISLAMABAD";
-console.log(city3.toLowerCase());
+let e = "PAKISTAN";
+console.log(e.toLowerCase());
+
+let f = "hello";
+console.log(f.toUpperCase());
+
+
+let g = "I like mango";
+console.log(g.indexOf("mango"));
+
+let h = "Hello Ali";
+console.log(h.indexOf("Ali"));
+
+let i = "I like tea";
+console.log(i.indexOf("coffee"));
+
+
+let j = "Pakistan";
+console.log(j.slice(0, 4));
+
+let k = "School";
+console.log(k.slice(0, 3));
+
+let l = "Computer";
+console.log(l.slice(0, 4));
+
+
+let m = "Pakistan";
+console.log(m.substring(0, 4));
+
+let n = "School";
+console.log(n.substring(1, 4));
+
+let o = "Hello";
+console.log(o.substring(0, 2));
+
+
+let p = "I like tea";
+console.log(p.replace("tea", "milk"));
+
+let q = "Hello Ali";
+console.log(q.replace("Ali", "Ahmed"));
+
+let r = "I like cats";
+console.log(r.replace("cats", "dogs"));
+
+
+let s = "Apple,Banana,Mango";
+console.log(s.split(","));
+
+let t = "Ali,Ahmed";
+console.log(t.split(","));
+
+let u = "Red,Blue,Green";
+console.log(u.split(","));
+
+
+let v = "   Hello   ";
+console.log(v.trim());
+
+let w = "   Ali   ";
+console.log(w.trim());
+
+let x = "   Pakistan   ";
+console.log(x.trim());
+
+
+let y = "I like mango";
+console.log(y.includes("mango"));
+
+let z = "Hello Ali";
+console.log(z.includes("Ahmed"));
+
+let aa = "I love Pakistan";
+console.log(aa.includes("Pakistan"));
+
+
+let first = "Ali";
+let last = "Abbas";
+console.log(first.concat(" ", last));
+
+let word1 = "Good";
+let word2 = "Morning";
+console.log(word1.concat(" ", word2));
 
 let word3 = "Hello";
-console.log(word3.toUpperCase());
-
-
-// Example 4: indexOf()
-console.log("EXAMPLE 4: INDEXOF");
-let text1 = "I like mango";
-console.log(text1.indexOf("mango"));
-
-let text2 = "Hello Ali";
-console.log(text2.indexOf("Ali"));
-
-let text3 = "I like tea";
-console.log(text3.indexOf("coffee"));
-
-
-// Example 5: slice()
-console.log("EXAMPLE 5: SLICE");
-let word4 = "Pakistan";
-console.log(word4.slice(0, 4));
-
-let word5 = "JavaScript";
-console.log(word5.slice(0, 4));
-
-let word6 = "Computer";
-console.log(word6.slice(0, 3));
-
-
-// Example 6: substring()
-console.log("EXAMPLE 6: SUBSTRING");
-let word7 = "Pakistan";
-console.log(word7.substring(0, 4));
-
-let word8 = "School";
-console.log(word8.substring(1, 4));
-
-let word9 = "Hello";
-console.log(word9.substring(0, 2));
-
-
-// Example 7: replace()
-console.log("EXAMPLE 7: REPLACE");
-let text4 = "I like tea";
-console.log(text4.replace("tea", "milk"));
-
-let text5 = "Hello Ali";
-console.log(text5.replace("Ali", "Ahmed"));
-
-let text6 = "I like cats";
-console.log(text6.replace("cats", "dogs"));
-
-
-// Example 8: split()
-console.log("EXAMPLE 8: SPLIT");
-let fruits1 = "Apple,Banana,Mango";
-console.log(fruits1.split(","));
-
-let names1 = "Ali,Ahmed,Hassan";
-console.log(names1.split(","));
-
-let subjects1 = "Math,English,Science";
-console.log(subjects1.split(","));
-
-
-// Example 9: trim()
-console.log("EXAMPLE 9: TRIM");
-let text7 = "   Hello   ";
-console.log(text7.trim());
-
-let text8 = "   Ali   ";
-console.log(text8.trim());
-
-let text9 = "   Pakistan   ";
-console.log(text9.trim());
-
-
-// Example 10: includes()
-console.log("EXAMPLE 10: INCLUDES");
-let text10 = "I like mango";
-console.log(text10.includes("mango"));
-
-let text11 = "Hello Ali";
-console.log(text11.includes("Ahmed"));
-
-let text12 = "I love Pakistan";
-console.log(text12.includes("Pakistan"));
-
-
-// Example 11: concat()
-console.log("EXAMPLE 11: CONCAT");
-let firstName1 = "Ali";
-let lastName1 = "Abbas";
-console.log(firstName1.concat(" ", lastName1));
-
-let word10 = "Good";
-let word11 = "Morning";
-console.log(word10.concat(" ", word11));
-
-let word12 = "Hello";
-let word13 = "World";
-console.log(word12.concat(" ", word13));
+let word4 = "World";
+console.log(word3.concat(" ", word4));

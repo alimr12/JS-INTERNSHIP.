@@ -100,6 +100,57 @@ function car(name) {
 }
 console.log(car("Toyota"));
 
+function fruit(name) {
+    return "Fruit " + name;
+}
+console.log(fruit("Apple"));
+
+function pet(name) {
+    return "Pet " + name;
+}
+console.log(pet("Cat"));
+
+function book(name) {
+    return "Book " + name;
+}
+console.log(book("English"));
+
+function plusFive(a) {
+    return a + 5;
+}
+console.log(plusFive(10));
+
+function minusTwo(a) {
+    return a - 2;
+}
+console.log(minusTwo(8));
+
+function timesTwo(a) {
+    return a * 2;
+}
+console.log(timesTwo(6));
+
+function myName(name) {
+    return "My name is " + name;
+}
+console.log(myName("Ali"));
+
+function myCity(name) {
+    return "I live in " + name;
+}
+console.log(myCity("Rawalpindi"));
+
+function drink(name) {
+    return "Drink " + name;
+}
+console.log(drink("Water"));
+
+function game(name) {
+    return "Game " + name;
+}
+console.log(game("Cricket"));
+
+
 
 console.log("Function Expression");
 
@@ -203,6 +254,57 @@ let car1 = function(name) {
 };
 console.log(car1("Honda"));
 
+let fruit1 = function(name) {
+    return "Fruit " + name;
+};
+console.log(fruit1("Mango"));
+
+let pet1 = function(name) {
+    return "Pet " + name;
+};
+console.log(pet1("Dog"));
+
+let book1 = function(name) {
+    return "Book " + name;
+};
+console.log(book1("Math"));
+
+let plusFive1 = function(a) {
+    return a + 5;
+};
+console.log(plusFive1(5));
+
+let minusTwo1 = function(a) {
+    return a - 2;
+};
+console.log(minusTwo1(10));
+
+let timesTwo1 = function(a) {
+    return a * 2;
+};
+console.log(timesTwo1(4));
+
+let myName1 = function(name) {
+    return "My name is " + name;
+};
+console.log(myName1("Ahmed"));
+
+let myCity1 = function(name) {
+    return "I live in " + name;
+};
+console.log(myCity1("Islamabad"));
+
+let drink1 = function(name) {
+    return "Drink " + name;
+};
+console.log(drink1("Juice"));
+
+let game1 = function(name) {
+    return "Game " + name;
+};
+console.log(game1("Football"));
+
+
 
 console.log("Arrow Function");
 
@@ -265,6 +367,37 @@ console.log(minusOne2(10));
 
 let car2 = name => "Car " + name;
 console.log(car2("Suzuki"));
+
+let fruit2 = name => "Fruit " + name;
+console.log(fruit2("Banana"));
+
+let pet2 = name => "Pet " + name;
+console.log(pet2("Cat"));
+
+let book2 = name => "Book " + name;
+console.log(book2("Science"));
+
+let plusFive2 = a => a + 5;
+console.log(plusFive2(20));
+
+let minusTwo2 = a => a - 2;
+console.log(minusTwo2(7));
+
+let timesTwo2 = a => a * 2;
+console.log(timesTwo2(5));
+
+let myName2 = name => "My name is " + name;
+console.log(myName2("Hassan"));
+
+let myCity2 = name => "I live in " + name;
+console.log(myCity2("Lahore"));
+
+let drink2 = name => "Drink " + name;
+console.log(drink2("Milk"));
+
+let game2 = name => "Game " + name;
+console.log(game2("Hockey"));
+
 
 
 console.log("Anonymous Function");
@@ -349,6 +482,47 @@ setTimeout(function() {
     console.log("Bye");
 }, 1000);
 
+setTimeout(function() {
+    console.log("Orange");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Banana");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Cat");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Dog");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Water");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Milk");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Cricket");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Football");
+}, 1000);
+
+setTimeout(function() {
+    console.log(3 + 3);
+}, 1000);
+
+setTimeout(function() {
+    console.log("Good Bye");
+}, 1000);
+
+
 
 console.log("IIFE");
 
@@ -430,4 +604,44 @@ console.log("IIFE");
 
 (function() {
     console.log("Bye");
+})();
+
+(function() {
+    console.log("Orange");
+})();
+
+(function() {
+    console.log("Banana");
+})();
+
+(function() {
+    console.log("Cat");
+})();
+
+(function() {
+    console.log("Dog");
+})();
+
+(function() {
+    console.log("Water");
+})();
+
+(function() {
+    console.log("Milk");
+})();
+
+(function() {
+    console.log("Cricket");
+})();
+
+(function() {
+    console.log("Football");
+})();
+
+(function() {
+    console.log(6 + 4);
+})();
+
+(function() {
+    console.log("Good Bye");
 })();

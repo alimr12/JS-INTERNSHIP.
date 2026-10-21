@@ -50,6 +50,56 @@ function student(name) {
 }
 console.log(student("Ahmed"));
 
+function bye(name) {
+    return "Bye " + name;
+}
+console.log(bye("Ali"));
+
+function food(name) {
+    return "Food " + name;
+}
+console.log(food("Pizza"));
+
+function color(name) {
+    return "Color " + name;
+}
+console.log(color("Red"));
+
+function country(name) {
+    return "Country " + name;
+}
+console.log(country("Pakistan"));
+
+function school(name) {
+    return "School " + name;
+}
+console.log(school("City School"));
+
+function half(a) {
+    return a / 2;
+}
+console.log(half(10));
+
+function triple(a) {
+    return a * 3;
+}
+console.log(triple(4));
+
+function plusTen(a) {
+    return a + 10;
+}
+console.log(plusTen(5));
+
+function minusOne(a) {
+    return a - 1;
+}
+console.log(minusOne(8));
+
+function car(name) {
+    return "Car " + name;
+}
+console.log(car("Toyota"));
+
 
 console.log("Function Expression");
 
@@ -103,6 +153,56 @@ let student1 = function(name) {
 };
 console.log(student1("Hassan"));
 
+let bye1 = function(name) {
+    return "Bye " + name;
+};
+console.log(bye1("Ahmed"));
+
+let food1 = function(name) {
+    return "Food " + name;
+};
+console.log(food1("Burger"));
+
+let color1 = function(name) {
+    return "Color " + name;
+};
+console.log(color1("Blue"));
+
+let country1 = function(name) {
+    return "Country " + name;
+};
+console.log(country1("Pakistan"));
+
+let school1 = function(name) {
+    return "School " + name;
+};
+console.log(school1("ABC"));
+
+let half1 = function(a) {
+    return a / 2;
+};
+console.log(half1(20));
+
+let triple1 = function(a) {
+    return a * 3;
+};
+console.log(triple1(3));
+
+let plusTen1 = function(a) {
+    return a + 10;
+};
+console.log(plusTen1(10));
+
+let minusOne1 = function(a) {
+    return a - 1;
+};
+console.log(minusOne1(5));
+
+let car1 = function(name) {
+    return "Car " + name;
+};
+console.log(car1("Honda"));
+
 
 console.log("Arrow Function");
 
@@ -135,6 +235,36 @@ console.log(double2(6));
 
 let student2 = name => "Student " + name;
 console.log(student2("Ahmed"));
+
+let bye2 = name => "Bye " + name;
+console.log(bye2("Ali"));
+
+let food2 = name => "Food " + name;
+console.log(food2("Rice"));
+
+let color2 = name => "Color " + name;
+console.log(color2("Green"));
+
+let country2 = name => "Country " + name;
+console.log(country2("Pakistan"));
+
+let school2 = name => "School " + name;
+console.log(school2("ABC"));
+
+let half2 = a => a / 2;
+console.log(half2(8));
+
+let triple2 = a => a * 3;
+console.log(triple2(5));
+
+let plusTen2 = a => a + 10;
+console.log(plusTen2(20));
+
+let minusOne2 = a => a - 1;
+console.log(minusOne2(10));
+
+let car2 = name => "Car " + name;
+console.log(car2("Suzuki"));
 
 
 console.log("Anonymous Function");
@@ -179,6 +309,46 @@ setTimeout(function() {
     console.log("Student");
 }, 1000);
 
+setTimeout(function() {
+    console.log("Apple");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Mango");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Red");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Blue");
+}, 1000);
+
+setTimeout(function() {
+    console.log("Car");
+}, 1000);
+
+setTimeout(function() {
+    console.log("School");
+}, 1000);
+
+setTimeout(function() {
+    console.log(2 + 2);
+}, 1000);
+
+setTimeout(function() {
+    console.log(5 + 5);
+}, 1000);
+
+setTimeout(function() {
+    console.log(10 - 2);
+}, 1000);
+
+setTimeout(function() {
+    console.log("Bye");
+}, 1000);
+
 
 console.log("IIFE");
 
@@ -220,4 +390,44 @@ console.log("IIFE");
 
 (function() {
     console.log("JavaScript");
+})();
+
+(function() {
+    console.log("Apple");
+})();
+
+(function() {
+    console.log("Mango");
+})();
+
+(function() {
+    console.log("Red");
+})();
+
+(function() {
+    console.log("Blue");
+})();
+
+(function() {
+    console.log("Student");
+})();
+
+(function() {
+    console.log("School");
+})();
+
+(function() {
+    console.log(4 + 4);
+})();
+
+(function() {
+    console.log(10 / 2);
+})();
+
+(function() {
+    console.log(3 * 3);
+})();
+
+(function() {
+    console.log("Bye");
 })();

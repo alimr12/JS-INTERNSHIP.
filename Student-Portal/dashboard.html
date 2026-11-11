@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Student Portal</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="students.html">Students</a>
+            <a href="login.html" id="logout">Logout</a>
+        </nav>
+        <div class="container" id="dashboardContent">
+            <h2>Welcome, <span id="username">Student</span></h2>
+            <p>Manage your student records from here.</p>
+            <h3>Total Students</h3>
+            <h2 id="totalStudents">0</h2>
+            <p>Student Names: <span id="studentNames"></span></p>
+            <p>Recent Students: <span id="recentStudents"></span></p>
+            <p id="recordsStatus"></p>
+            <a href="students.html"><button type="button">Manage Students</button></a>
+        </div>
+        <p id="dashboardMessage"></p>
+        <p><a href="login.html" id="dashboardLoginLink" hidden>Go to Login</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

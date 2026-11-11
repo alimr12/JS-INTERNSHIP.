@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Events</title>
+</head>
+<body>
+    <h2>DOM Events</h2>
+    <button id="myButton">Click Me</button>
+    <input type="text" id="myInput" placeholder="Enter Something">
+    <p id="message"></p>
+    <select id="city">
+        <option>Islamabad</option>
+        <option>Lahore</option>
+        <option>Karachi</option>
+    </select>
+    <form id="myForm">
+        <input type="text" placeholder="Enter Name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="parent">
+        Parent
+        <button id="child">Child</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("HTML Loaded");
+        });
+        let button = document.getElementById("myButton");
+        let input = document.getElementById("myInput");
+        let message = document.getElementById("message");
+        button.addEventListener("click", function() {
+            message.innerHTML = "Button Clicked!";
+        });
+        button.addEventListener("dblclick", function() {
+            alert("Double Clicked!");
+        });
+        button.addEventListener("mouseover", function() {
+            button.style.backgroundColor = "blue";
+        });
+        button.addEventListener("mouseout", function() {
+            button.style.backgroundColor = "white";
+        });
+        document.addEventListener("keydown", function() {
+            console.log("Key Pressed");
+        });
+        document.addEventListener("keyup", function() {
+            console.log("Key Released");
+        });
+        input.addEventListener("input", function(event) {
+            message.innerHTML = event.target.value;
+        });
+        let city = document.getElementById("city");
+        city.addEventListener("change", function() {
+            console.log(city.value);
+        });
+        input.addEventListener("focus", function() {
+            console.log("Input Selected");
+        });
+        input.addEventListener("blur", function() {
+            console.log("Input Unselected");
+        });
+        function showAlert() {
+            alert("Hello");
+        }
+        button.addEventListener("click", showAlert);
+        button.removeEventListener("click", showAlert);
+        button.addEventListener("click", function(event) {
+            console.log(event);
+            console.log(event.target);
+            console.log(event.type);
+        });
+        let form = document.getElementById("myForm");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+        });
+        let parent = document.getElementById("parent");
+        let child = document.getElementById("child");
+        parent.addEventListener("click", function() {
+            alert("Parent Clicked");
+        });
+        child.addEventListener("click", function(event) {
+            event.stopPropagation();
+            alert("Child Clicked");
+        });
+    </script>
+</body>
+</html>

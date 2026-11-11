@@ -6,21 +6,16 @@ console.log(name.length);
 let city = "Lahore";
 console.log(city.length);
 
-
 let a = "Ahmed";
 console.log(a.charAt(0));
 
 let b = "School";
 console.log(b.charAt(2));
-
-
 let d = "ali";
 console.log(d.toUpperCase());
 
 let e = "PAKISTAN";
 console.log(e.toLowerCase());
-
-
 let g = "I like mango";
 console.log(g.indexOf("mango"));
 

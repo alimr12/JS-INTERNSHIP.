@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal - Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Student Portal</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="students.html">Students</a>
+            <a href="login.html" id="logout">Logout</a>
+        </nav>
+        <div class="container">
+            <h2>Manage Students</h2>
+            <form id="studentForm">
+                <input type="text" id="studentName" placeholder="Student Name" required>
+                <input type="email" id="studentEmail" placeholder="Student Email" required>
+                <input type="text" id="studentCourse" placeholder="Student Course" required>
+                <button type="submit">Add Student</button>
+            </form>
+            <input type="text" id="search" placeholder="Search Students">
+            <h3>Student Records</h3>
+            <div id="studentList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

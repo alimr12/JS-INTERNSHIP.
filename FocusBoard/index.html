@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusBoard - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>FocusBoard</h1>
+                <p>Your personal study planner</p>
+            </div>
+            <button id="clearBtn" class="outline-btn">Clear Tasks</button>
+        </header>
+
+        <section class="welcome">
+            <h2>Plan your day. Reach your goals.</h2>
+            <p>Keep your studies organized and stay focused.</p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Tasks</p>
+                <h2 id="totalTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Pending</p>
+                <h2 id="pendingTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Completed</p>
+                <h2 id="completedTasks">0</h2>
+            </div>
+        </section>
+
+        <main>
+            <section class="form-box">
+                <h2>Add New Task</h2>
+                <form id="taskForm">
+                    <label for="taskName">Task Name</label>
+                    <input type="text" id="taskName" placeholder="e.g. Practice JavaScript" required>
+
+                    <label for="taskSubject">Subject</label>
+                    <select id="taskSubject" required>
+                        <option value="">Choose Subject</option>
+                        <option>Programming</option>
+                        <option>Database</option>
+                        <option>Web Development</option>
+                        <option>Mathematics</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="taskDate">Due Date</label>
+                    <input type="date" id="taskDate" required>
+
+                    <button type="submit">Add Task</button>
+                    <p id="message"></p>
+                </form>
+            </section>
+
+            <section class="task-box">
+                <div class="task-heading">
+                    <h2>My Tasks</h2>
+                    <select id="taskFilter">
+                        <option value="all">All Tasks</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div id="taskList"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>FocusBoard | Stay consistent, keep learning.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
